@@ -1,50 +1,185 @@
-# 👋 ¡Hola! Soy Erick Aloy
+<style>
+  /* Fondo oscuro y tipografía moderna */
+  body {
+    background-color: #0d1117; /* GitHub Dark Blue-Gray */
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=007ACC&center=true&vCenter=true&width=435&lines=Software+Engineering+Student;UTA+FISEI+Ambato;Passion+for+Clean+Code+%26+Design" alt="Typing animation" />
-</p>
+  /* Contenedor principal para centrar el contenido */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
 
----
+  /* Sección de Cabecera (Hero) */
+  .hero {
+    text-align: center;
+    padding: 60px 0;
+    border-bottom: 1px solid #30363d;
+  }
 
-## 🚀 Sobre mí
-Estudiante de Ingeniería en Sistemas en la **Universidad Técnica de Ambato (FISEI)**. Mi enfoque está en escribir código limpio, arquitectura de software escalable y optimización de bases de datos. Me gusta transformar problemas complejos en soluciones tecnológicas eficientes.
+  .hero h1 {
+    font-size: 3rem;
+    color: #58a6ff; /* GitHub Blue */
+    margin-bottom: 10px;
+  }
 
----
+  .hero p {
+    font-size: 1.25rem;
+    color: #8b949e;
+  }
 
-## 🛠️ Tecnologías y Herramientas
+  /* Estilo para los títulos de sección */
+  h2 {
+    color: #58a6ff;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 10px;
+    margin-top: 40px;
+  }
 
-### 💻 Lenguajes y Backend
-<p align="left">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-</p>
+  /* Tarjetas de Habilidades (Skills Grid) */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
 
-### 🌐 Frontend y Base de Datos
-<p align="left">
-  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
-  <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-</p>
+  .skill-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
 
----
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(88, 166, 255, 0.2);
+    border-color: #58a6ff;
+  }
 
-## 📊 Estadísticas de GitHub
+  .skill-card img {
+    height: 50px;
+    margin-bottom: 15px;
+  }
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ErickAloy871&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="ErickAloy871 Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ErickAloy871&layout=compact&theme=radical&hide_border=true" alt="ErickAloy871 Top Langs" />
-</p>
+  /* Tarjetas de Proyectos */
+  .project-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+  }
 
----
+  .project-card h3 {
+    margin-top: 0;
+    color: #f0f6fc;
+  }
 
-## 📈 Hablemos
-* 📧 **Email:** [Tu correo aquí]
-* 💼 **LinkedIn:** [Tu perfil de LinkedIn aquí]
-* 🏃‍♂️ **Actividad:** Corredor y entusiasta de los videojuegos.
+  .project-card p {
+    color: #8b949e;
+  }
 
----
-<p align="center">
-  <sub>"La simplicidad es la máxima sofisticación"</sub>
-</p>
+  .tag {
+    display: inline-block;
+    background-color: rgba(88, 166, 255, 0.1);
+    color: #58a6ff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+  /* Botón de Acción Principal */
+  .cta-button {
+    display: inline-block;
+    background-color: #238636; /* GitHub Green */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+  }
+
+  .cta-button:hover {
+    background-color: #2ea043;
+  }
+
+</style>
+
+<div class="container">
+
+  <header class="hero">
+    <h1>Erick Aloy</h1>
+    <p>Ingeniero en Sistemas en Formación | Universidad Técnica de Ambato (FISEI)</p>
+    <a href="https://github.com/ErickAloy871" class="cta-button">Ver Perfil Completo de GitHub</a>
+  </header>
+
+  <section id="skills">
+    <h2>🛠️ Tecnologías Principales</h2>
+    <div class="skills-grid">
+      
+      <div class="skill-card">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" />
+        <h3>Java</h3>
+        <p>Desarrollo Backend y aplicaciones de escritorio (Swing/Ant).</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" />
+        <h3>C# / .NET</h3>
+        <p>Desarrollo en ecosistema Microsoft y lógica de negocios.</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-plain.svg" alt="Angular" />
+        <h3>Angular / TS</h3>
+        <p>Creación de interfaces de usuario modernas y escalables (SPA).</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="Oracle" />
+        <h3>Oracle / SQL</h3>
+        <p>Diseño avanzado de bases de datos relacionales y gestión de datos.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>💻 Proyectos Destacados</h2>
+    
+    <div class="project-card">
+      <h3>🎬 Plataforma para Cine</h3>
+      <p>Desarrollo de una interfaz web moderna para la gestión y visualización de cartelera de cine.</p>
+      <span class="tag">Angular</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">UI/UX</span>
+    </div>
+
+    <div class="project-card">
+      <h3>🚛 Sistema de Logística de Transporte</h3>
+      <p>Diseño e implementación de una base de datos relacional para el control de cooperativas y socios de transporte.</p>
+      <span class="tag">Oracle Database</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Data Modeling</span>
+    </div>
+
+  </section>
+
+  <footer style="text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid #30363d; color: #8b949e;">
+    <p>&copy; 2026 Erick Aloy. Desarrollado y alojado en GitHub Pages.</p>
+  </footer>
+
+</div>
